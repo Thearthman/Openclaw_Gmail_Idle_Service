@@ -41,9 +41,9 @@ Runtime files land under `**$OPENCLAW_HOME/services/gmail/**` after install; thi
 
 This directory is its own git repository (`git init` is already done if you used the prepared tree).
 
-If **`gmail-installer/`** is inside another repo (e.g. dotfiles), either:
+If `**gmail-installer/`** is inside another repo (e.g. dotfiles), either:
 
-- add it to the parent **`.gitignore`** and clone/publish this folder separately, or  
+- add it to the parent `**.gitignore**` and clone/publish this folder separately, or  
 - use a **submodule** pointed at your GitHub repo.
 
 Typical first push:
