@@ -37,25 +37,6 @@ templates/          # Source files copied into $OPENCLAW_HOME/services/gmail/
 
 Runtime files land under `**$OPENCLAW_HOME/services/gmail/**` after install; this repo stays a **source-only** package you can version control without secrets.
 
-## Publishing your fork
-
-This directory is its own git repository (`git init` is already done if you used the prepared tree).
-
-If `**gmail-installer/`** is inside another repo (e.g. dotfiles), either:
-
-- add it to the parent `**.gitignore**` and clone/publish this folder separately, or  
-- use a **submodule** pointed at your GitHub repo.
-
-Typical first push:
-
-```bash
-git add .
-git commit -m "Initial commit: OpenClaw Gmail installer"
-# Create an empty repo on GitHub, then:
-git remote add origin https://github.com/YOUR_USER/openclaw-gmail-installer.git
-git push -u origin main
-```
-
 ## License
 
 See [LICENSE](LICENSE).
