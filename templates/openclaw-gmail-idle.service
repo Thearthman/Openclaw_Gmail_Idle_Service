@@ -1,0 +1,12 @@
+[Unit]
+Description=OpenClaw Gmail IDLE notifier
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/bin/sh -lc 'set -a; . "__SERVICE_DIR__/gmail.env"; set +a; exec node "__SERVICE_DIR__/gmail-idle-notifier.js"'
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=default.target
